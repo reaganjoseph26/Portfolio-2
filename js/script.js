@@ -1,31 +1,30 @@
-// require('bootstrap');
+require("bootstrap");
 const img1 = require("../assets/images/movie-hunt.jpg");
-const img2 = require("../../assets/img/grill.jpg");
+const img2 = require("../assets/images/movie-hunt.jpg");
 
 $(document).ready(function() {
   
-  
-  // First image is hard coded in index.html
-  const carouselSlides = [
+
+const carouselSlides = [
     {
-      title: "We travel all over the US",
-      subtitle: "Check out our schedule!",
+      title: "Exmaple",
+      subtitle: "Example",
       img: img1,
-      btnText: "View Schedule",
-      btnUrl: "schedule.html"
+      btnText: "Example",
+      btnUrl: "https://reaganjoseph26.github.io/Portfolio/#Projects"
     },
     {
       title: "Our food is seriously the bomb!",
       subtitle: "What are you waiting for?",
       img: img2,
       btnText: "Purchase Tickets",
-      btnUrl: "tickets.html"
+      btnUrl: "https://reaganjoseph26.github.io/Portfolio/#Projects"
     },
   ]
 
-  carouselSlides.forEach((slide, i) => {
+carouselSlides.forEach((slide, i) => {
     $('.carousel-inner').append(`
-  <div class="carousel-item fullscreen-carousel" style="background-image: url('${slide.img}')">
+  <div class="carousel-item" style="background-image: url('${slide.img}')">
     <div class="d-flex h-100 align-items-center justify-content-center carousel-caption">
         <div class="container">
           <div class="row align-items-center justify-content-center">
@@ -43,4 +42,4 @@ $(document).ready(function() {
     </div>
   </div>`)
   })
-});
+})
