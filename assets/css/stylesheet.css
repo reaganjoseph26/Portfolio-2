@@ -71,6 +71,10 @@
     margin: 0 12px;
 }
 
+.carousel-indicator.current-slide {
+    background: rgba(0, 0, 0, 0.75);
+}
+
 body {
      background-color:white;  
      /* background-image: url("../images/Hero-image.jpg"); */
