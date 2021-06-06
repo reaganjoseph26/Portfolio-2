@@ -19,6 +19,7 @@
     background: lightskyblue;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel-inner {
@@ -62,7 +63,8 @@
 .carousel-nav {
     display: flex;
     justify-content: center;
-    padding: 10px 0 
+    padding: 10px 0;
+    background-color: pink;
 }
 
 .carousel-indicator {
