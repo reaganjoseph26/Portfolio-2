@@ -64,7 +64,7 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    background-color: pink;
+    
 }
 
 .carousel-indicator {
@@ -79,6 +79,10 @@
 
 .carousel-indicator.current-slide {
     background: rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden {
+    display: none;
 }
 
 body {
