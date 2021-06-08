@@ -5,9 +5,6 @@
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
 }
-/* * {
-    box-sizing: border-box;
-} */
 
 .carousel {
     position: relative;
@@ -31,6 +28,7 @@
 
 .carousel h4 {
     text-align: center;
+    padding-top: 20px;
 }
 
 .carousel-inner {
@@ -177,6 +175,7 @@ nav h4 {
 .text {
     padding: 2rem 20rem;
     line-height: 1.3rem;
+    border-bottom: 2px solid;
 }
 
 
