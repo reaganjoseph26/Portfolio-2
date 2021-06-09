@@ -9,8 +9,9 @@
 .carousel {
     position: relative;
     height: 250px;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    margin-bottom: 40px;
 }
 
 .carousel-img {
@@ -68,12 +69,12 @@
 }
 
 .carousel-button-left {
-    left: -50px;
+    left: 50px;
     position: absolute;
 }
 
 .carousel-button-right {
-    right: -50px;
+    right: 50px;
     position: absolute;
 }
 
@@ -86,6 +87,7 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    border-bottom: 2px solid;
     
 }
 
@@ -183,6 +185,26 @@ nav h4 {
     color: #fff
 }
 
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    font-size: 24px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color:steelblue;
+}
+
 
 .text {
     padding: 2rem 20rem;
@@ -190,10 +212,60 @@ nav h4 {
     border-bottom: 2px solid;
 }
 
+.contact-info {
+    display: flex;
+    width: 100%;
+    /* max-width: 1200px; */
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff6348;
+    text-align: center;
+    line-height: 60px !important;
+    transition: 0.3s linear;
+    border-radius: 50%;
+}
+
+.card:hover .card-icon{
+    background: none;
+    color: #ff6348;
+    transform: scale(2.6);
+}
+
+
+@media screen and (max-width: 800px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0
+    }
+}
 
 
   
-@media screen and (max-width: 1460px) and (min-width: 993px) {
+/* @media screen and (max-width: 1460px) and (min-width: 993px) {
 #logo {
     display: none;
 
@@ -213,7 +285,7 @@ nav h4 {
     #release-date, h1 {
         text-align: center;
     }
-}
+} */
 
 
 

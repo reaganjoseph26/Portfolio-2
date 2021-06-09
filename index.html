@@ -7,6 +7,7 @@
     <title>Everything Reagan</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/stylesheet.css"
@@ -14,15 +15,18 @@
     </head>
 
     <body>
+
         <section>
             <nav>
                 <h4> Dev Reagan.</h4>
-                <!-- <div>
-                    <a href="" class="nav-wrapper"><i class="material-icons">menu</i></a>
-                    <ul>
-                        <li><a href="">Projects</a></li>
-                    </ul>
+                <!-- <div class="nav-wrapper">
+                    <i class="material-icons">menu</i>
                 </div> -->
+                <ul class="nav-links">
+                    <li><a href="#about">Who am I?</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
 
             <div class="container">
@@ -30,8 +34,8 @@
             </div>
             <div class="content">
                 <div class="content-images">
-                    <div>
-                        <h4> Who am I? </h4>
+                    <div id="about">
+                        <h4>Who am I?</h4>
                         <img src="assets/images/Me.jpg" class="me" alt="">
                     </div>
                 </div>
@@ -41,7 +45,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="projects">
             <div class="projects">
                 <h4> Projects.</h4>
             </div>
@@ -83,18 +87,17 @@
             </div>    
         </section>
 
-        <!-- <footer class="page-footer">
-            <div>
-                <a>
-                   <i class="fa fa-facebook fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
-                  </a> -->
-                  <!-- Google +-->
-                  <!-- <a>
-                    <i class="fa fa-google-plus fa-lg text-white mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
+        <section id="contact" class="contact-info">
+            <div class="card">
+                <a href="mailto:reaganjoseph26@yahoo.com"><i class="card-icon far fa-envelope"></i></a>
             </div>
-            <div class="footer-copyright text-center py-3 text-white">© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.</div>        
-        </footer> -->
+            <div class="card">
+                <a  href="https://www.linkedin.com/in/reagan-joseph-10a0941b6/"><i class="card-icon fab fa-linkedin"></i></a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/reaganjoseph26"><i class="card-icon fab fa-github"></i></a>
+            </div>
+        </section>
      
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
