@@ -239,8 +239,7 @@ nav h4 {
     transform: scale(2.6);
 }
 
-.projects-title{
-    transform: translate(380%, 300%);
+.project-title {
     width: fit-content;
     height: 40px;
     font-size: 40px;
@@ -250,6 +249,28 @@ nav h4 {
     opacity: 0;
     transition: 0.3s linear;
 }
+
+.movie-hunt{
+    transform: translate(380%, 300%);
+}
+
+.fitter{
+    transform: translate(880%, 300%);
+}
+
+.book-search-engine {
+    transform: translate(200%, 300%);
+}
+
+.creepventures {
+    transform: translate(230%, 300%);
+}
+
+.budget-tracker {
+    transform: translate(280%, 300%);
+}
+
+
 
 .carousel-item:hover p {
     opacity: 1;
