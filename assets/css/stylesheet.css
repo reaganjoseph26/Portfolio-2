@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.carousel {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel-img:hover {
+    opacity: 0.1;
+}
+
+
+.carousel-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects h4 {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.carousel-inner {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.carousel-button-right, .carousel-button-left {
+    border: 0;
+    cursor: pointer;
+    background-color: black;
+    height: 100%;
+    width: 45px;
+    top: 0;
+    line-height: 250px;
+    z-index: 3;
+    font-size: 25px;
+    text-align: center;
+}
+
+.carousel-button-left {
+    left: 50px;
+    position: absolute;
+}
+
+.carousel-button-right {
+    right: 50px;
+    position: absolute;
+}
+
+.carousel-button-right i, .carousel-button-left i {
+    width: 20px;
+    color: white;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 2px solid;
+    
+}
+
+.carousel-indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel-indicator.current-slide {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.container {
+    height: 100vh;
+}
+
+.container img {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    width: 100%;
+    background-color: white;
+    min-height: 100vh;
+    z-index: 2;
+    position: absolute;
+}
+
+.content-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.content-images img {
+    height: 60vh;
+    padding-top: 35px;
+    border-radius: 150%;
+}
+
+h4 {
+    font-size: 2rem;
+    color: black;
+}
+
+.main-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 6rem;
+    transform: translate(-50%, -30%)
+}
+
+.material-icons {
+    font-size: 2rem;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10rem;
+    width: 100%
+}
+
+nav h4 {
+    color: #fff
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    font-size: 24px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color:steelblue;
+}
+
+
+.text {
+    padding: 2rem 20rem;
+    line-height: 1.3rem;
+    border-bottom: 2px solid;
+}
+
+.contact-info {
+    display: flex;
+    width: 100%;
+    /* max-width: 1200px; */
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.contact-h4 {
+    text-align: center;
+}
+
+.card {
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff6348;
+    text-align: center;
+    line-height: 60px !important;
+    transition: 0.3s linear;
+    border-radius: 50%;
+}
+
+.card:hover .card-icon{
+    background: none;
+    color: #ff6348;
+    transform: scale(2.6);
+}
+
+.project-title {
+    width: fit-content;
+    height: 40px;
+    font-size: 40px;
+    position: absolute;
+    font-style: italic;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.movie-hunt{
+    transform: translate(380%, 300%);
+}
+
+.fitter{
+    transform: translate(880%, 300%);
+}
+
+.book-search-engine {
+    transform: translate(200%, 300%);
+}
+
+.creepventures {
+    transform: translate(230%, 300%);
+}
+
+.budget-tracker {
+    transform: translate(280%, 300%);
+}
+
+
+
+.carousel-item:hover p {
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0
+    }
+}
+
+
+  
+/* @media screen and (max-width: 1460px) and (min-width: 993px) {
+#logo {
+    display: none;
+
+}
+    
+}
+
+@media screen and (max-width: 992px)  {
+    .hide-temp {
+        display: none
+    }
+
+    iframe, img {
+        width: inherit;
+    }
+
+    #release-date, h1 {
+        text-align: center;
+    }
+} */
+
+
+
+
+
